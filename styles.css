@@ -158,8 +158,13 @@ table {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 999999;
+    border-radius: 16px;
     img {
         width: 100%;
+    }
+    
+    @media screen and (max-width: 550px) {
+        width: calc(100% - 21px);
     }
 }
 
