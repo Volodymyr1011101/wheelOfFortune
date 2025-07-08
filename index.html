@@ -10,8 +10,9 @@
 <body>
 <script>
     const lang = navigator.language || navigator.userLanguage;
-    if (lang.startsWith('de')) {
-        window.location.href = '/de';
+    const langs = navigator.languages;
+    if (lang.startsWith('en-DE') || langs.includes('en') || langs.includes('en-DE')) {
+        window.location.href = '/en';
     } else {
         window.location.href = '/de';
     }
