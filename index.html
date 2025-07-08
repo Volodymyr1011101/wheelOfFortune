@@ -11,9 +11,9 @@
 <script>
     const lang = navigator.language || navigator.userLanguage;
     const langs = navigator.languages;
-    if (lang.startsWith('en-DE') || langs.includes('en') || langs.includes('en-DE')) {
+    if (lang.startsWith('de-DE') || langs.includes('de')) {
         window.location.href = '/en';
-    } else if(lang.startsWith('de-DE') || langs.includes('de')) {
+    } else if(lang.startsWith('en-DE') || langs.includes('en') || langs.includes('en-DE')) {
         window.location.href = '/de';
     }
     console.log(lang);
