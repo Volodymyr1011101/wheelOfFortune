@@ -13,7 +13,7 @@
     const langs = navigator.languages;
     if (lang.startsWith('en-DE') || langs.includes('en') || langs.includes('en-DE')) {
         window.location.href = '/en';
-    } else {
+    } else if(lang.startsWith('de-DE') || langs.includes('de')) {
         window.location.href = '/de';
     }
     console.log(lang);
